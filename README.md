@@ -1,10 +1,16 @@
 # Demo
 
-Demo to demonstrate my ability as a developer.
+Demo made to demonstrate my ability as a developer.
 
-As of the time of writing this I am not even sure what I will make.
+## Introduction
+
+It's a CLI that asks you questions and then responds.
+
+## Commands
+
+`npm start` - Starts the CLI
+`npm test`  - Tests
 
 ## Comments
 
 - It doesn't use babel because I don't want a build step for simplicities sake.
-- Wish I did the minor refactors as I wrote the code

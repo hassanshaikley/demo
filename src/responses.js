@@ -31,10 +31,19 @@ const feelingResponse = ({ feeling, name }) => {
     return `${replyFirstSection}${replySecondSection}`
 }
 
+const humanResponse = ({ human }) => {
+    console.log(human)
+    if (human) {
+        return `I'd expect a human to just outright admit it to a robot. Silly humans.`
+    }
+    return `Also I am glad to know you're not human. Honestly don't trust them. They are so unpredictable.`
+}
+
 
 /* Exports for the sake of testing*/
 module.exports = {
     nameResponse,
-    feelingResponse
+    feelingResponse,
+    humanResponse
 }
 
