@@ -1,5 +1,8 @@
-const sum = (x,y) => x + y
+const sourceDir = '../src';
+const {nameResponse} = require(`${sourceDir}/responses`)
 
-test('adds 1 + 2 to equal 3', () => {
-	  expect(sum(1, 2)).toBe(3);
+test('Responds to name with `Hello ${name}`', () => {
+	const name = 'Fantasia'
+	expect(nameResponse({name})).toBe(`Hello ${name}`);
 });
+
