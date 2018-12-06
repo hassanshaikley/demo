@@ -1,6 +1,7 @@
 const sourceDir = '../src';
 const { nameResponse, feelingResponse } = require(`${sourceDir}/responses`)
 const questions = require(`${sourceDir}/questions`)
+const { } = require(`${sourceDir}/helpers`)
 
 describe('Name responses', () => {
 	test('Responds to name with `Hello ${name}`', () => {
@@ -29,3 +30,4 @@ describe('Feeling responses', () => {
 	});
 })
 
+describe('Helpers', () => { })
