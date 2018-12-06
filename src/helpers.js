@@ -1,7 +1,7 @@
 const chalk = require('chalk');
 
 console.reset = function () {
-    return process.stdout.write('\033c');
+    return process.stdout.write('\x1Bc');
 }
 
 const animateString = (string) => {
