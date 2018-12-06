@@ -5,5 +5,5 @@ const nameResponse = (answers) => {
 
 /* Exports for the sake of testing*/
 module.exports = {
-	nameResponse
+    nameResponse
 }
