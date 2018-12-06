@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const questions = require('./questions')
-const responses = require('./responses')
+const { nameResponse } = require('./responses')
 
 inquirer
 	.prompt(questions)
 	.then(answers => {
-		console.log(responses.nameResponse(answers))
+		console.log(nameResponse(answers))
 	})
 

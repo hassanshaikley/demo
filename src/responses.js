@@ -1,5 +1,4 @@
-const nameResponse = (answers) => {
-    const name = answers['name'];
+const nameResponse = ({ name }) => {
     return `Hello ${name}`
 }
 
