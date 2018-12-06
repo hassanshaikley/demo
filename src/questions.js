@@ -11,6 +11,13 @@ module.exports = [
         choices: ['Good', 'Bad', 'Unsure', 'Horrific', 'Ecstatic']
     },
     {
+        type: 'checkbox',
+        name: 'What kinds of robots do you like?',
+        choices: [
+            'Evil', 'Extra Evil', 'Incomprehensively Evil', 'Good'
+        ]
+    },
+    {
         type: 'confirm',
         name: 'human',
         message: 'Are you a human being?'

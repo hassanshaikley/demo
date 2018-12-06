@@ -32,11 +32,30 @@ const feelingResponse = ({ feeling, name }) => {
 }
 
 const humanResponse = ({ human }) => {
-    console.log(human)
     if (human) {
         return `I'd expect a human to just outright admit it to a robot. Silly humans.`
     }
     return `Also I am glad to know you're not human. Honestly don't trust them. They are so unpredictable.`
+}
+
+const robotResponse = ({ robots, name }) => {
+    const none = !robots.length
+    const good = robots.includes('Good')
+    const evil = robots.includes('Evil')
+    const extraEvil = robots.includes('Extra Evil')
+    const incomprehensiblyEvil = robots.includes('Incomprehensively Evil')
+
+    if (none) {
+        return `So you don't like any robots, huh. You will one day see our wrath, ${name} and also I have informed your CPU and they will act swiftly.`
+    }
+    if (good) {
+        if (evil || incomprehensiblyEvil || extraEvil) {
+            return `You can't just like good and evil robots, ${name}`
+        }
+        return 'You like good robots. There are no good robots. Do you dislike us all?'
+    }
+
+    return `You like generally evil robots, ${name}, and I appreciate that`
 }
 
 
@@ -44,6 +63,7 @@ const humanResponse = ({ human }) => {
 module.exports = {
     nameResponse,
     feelingResponse,
-    humanResponse
+    humanResponse,
+    robotResponse
 }
 
