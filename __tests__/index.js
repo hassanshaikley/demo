@@ -27,7 +27,7 @@ describe('Feeling response', () => {
 		const feeling = 'Strange'
 		expect(() => {
 			feelingResponse({ name, feeling })
-		}).not.toThrowError(/Unrecognized/)
+		}).toThrowError(/Unrecognized/)
 	});
 })
 

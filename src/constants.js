@@ -12,5 +12,9 @@ module.exports = {
         HORRIFIC: 'Horrific',
         ECSTATIC: 'Ecstatic'
     },
-    FPS: 30
+    FPS: 30,
+    ERRORS: {
+        UNRECOGNIZED_ANSWER: 'Unrecognized Answer'
+    }
+
 }

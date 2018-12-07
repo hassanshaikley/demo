@@ -1,5 +1,4 @@
-const { UnrecognizedReplyError } = require('./errors')
-const { FEELING } = require('./constants')
+const { FEELING, ERRORS } = require('./constants')
 const nameResponse = ({ name }) => {
     return `Hello ${name}`
 }
@@ -25,7 +24,7 @@ const feelingResponse = ({ feeling, name }) => {
             replySecondSection = `Are you sure you feel unsure? I don't get it. I don't think any AI will ever get it.`
             break;
         default:
-            throw new UnrecognizedReplyError()
+            throw ERRORS.UNRECOGNIZED_ANSWER
     }
 
     return `${replyFirstSection}${replySecondSection}`
