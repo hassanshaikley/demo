@@ -1,6 +1,6 @@
 const sourceDir = '../src';
 const questions = require(`${sourceDir}/questions`)
-const { nameResponse, feelingResponse, humanResponse, robotResponse } = require(`${sourceDir}/responses`)
+const { nameResponse, feelingResponse, humanResponse, robotResponse, finalResponse } = require(`${sourceDir}/responses`)
 const { } = require(`${sourceDir}/helpers`)
 const { ROBOTS } = require(`${sourceDir}/constants`)
 
@@ -59,5 +59,10 @@ describe('Robots response', () => {
 	})
 })
 
+describe('Final response', () => {
+	const name = 'Jake'
+	expect(finalResponse({ name })).toBe(`\nThank you for your time, ${name}. I hope you had a fun time playing with this. If you don't believe they are that's fine and if you have feedback that would be awesome!`)
+
+})
 
 describe('Helpers', () => { })

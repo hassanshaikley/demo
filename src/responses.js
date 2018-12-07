@@ -58,12 +58,17 @@ const robotResponse = ({ robots, name }) => {
     return `You like generally evil robots, ${name}, and I appreciate that`
 }
 
+const finalResponse = ({ name }) => {
+    return `\nThank you for your time, ${name}. I hope you had a fun time playing with this. If you don't believe they are that's fine and if you have feedback that would be awesome!`
+}
+
 
 /* Exports for the sake of testing*/
 module.exports = {
     nameResponse,
     feelingResponse,
     humanResponse,
-    robotResponse
+    robotResponse,
+    finalResponse
 }
 
