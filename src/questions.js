@@ -1,4 +1,8 @@
-const { ROBOTS } = require('./constants')
+const { ROBOTS, FEELING } = require('./constants')
+
+const constKeyToVal = (key) => {
+    return Object.keys(key).map(val => key[val])
+}
 
 module.exports = [
     {
@@ -10,15 +14,13 @@ module.exports = [
         type: 'list',
         name: 'feeling',
         message: 'How are you feeling today',
-        choices: ['Good', 'Bad', 'Unsure', 'Horrific', 'Ecstatic']
+        choices: constKeyToVal(FEELING)
     },
     {
         type: 'checkbox',
         name: 'robots',
         message: 'What kinds of robots do you like?',
-        choices: [
-            ROBOTS.EVIL, ROBOTS.EXTRA_EVIL, ROBOTS.INCOMPREHENSIBLY_EVIL, ROBOTS.GOOD
-        ]
+        choices: constKeyToVal(ROBOTS)
     },
     {
         type: 'confirm',
