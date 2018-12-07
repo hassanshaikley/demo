@@ -1,3 +1,5 @@
+const { ROBOTS } = require('./constants')
+
 module.exports = [
     {
         type: 'input',
@@ -12,9 +14,10 @@ module.exports = [
     },
     {
         type: 'checkbox',
-        name: 'What kinds of robots do you like?',
+        name: 'robots',
+        message: 'What kinds of robots do you like?',
         choices: [
-            'Evil', 'Extra Evil', 'Incomprehensively Evil', 'Good'
+            ROBOTS.EVIL, ROBOTS.EXTRA_EVIL, ROBOTS.INCOMPREHENSIBLY_EVIL, ROBOTS.GOOD
         ]
     },
     {

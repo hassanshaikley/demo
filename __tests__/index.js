@@ -1,7 +1,9 @@
 const sourceDir = '../src';
-const { nameResponse, feelingResponse, humanResponse, robotResponse } = require(`${sourceDir}/responses`)
 const questions = require(`${sourceDir}/questions`)
+const { nameResponse, feelingResponse, humanResponse, robotResponse } = require(`${sourceDir}/responses`)
 const { } = require(`${sourceDir}/helpers`)
+const { ROBOTS } = require(`${sourceDir}/constants`)
+
 
 describe('Name response', () => {
 	test('Responds to name with `Hello ${name}`', () => {
@@ -44,11 +46,11 @@ describe('Robots response', () => {
 	const name = 'Jake'
 
 	test('when answer includes Extra Evil', () => {
-		const robots = ['Extra Evil']
+		const robots = [ROBOTS.EXTRA_EVIL]
 		expect(robotResponse({ robots, name })).toBe(`You like generally evil robots, ${name}, and I appreciate that`)
 	})
 	test('when answer contradicts itself', () => {
-		const robots = ['Extra Evil', 'Good']
+		const robots = [ROBOTS.EXTRA_EVIL, ROBOTS.GOOD]
 		expect(robotResponse({ robots, name })).toBe(`You can't just like good and evil robots, ${name}`)
 	})
 	test('when no robots are liked', () => {

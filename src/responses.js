@@ -33,9 +33,9 @@ const feelingResponse = ({ feeling, name }) => {
 
 const humanResponse = ({ human }) => {
     if (human) {
-        return `I'd expect a human to just outright admit it to a robot. Silly humans.`
+        return `I'd expect a human to just outright admit that they are not human to a robot. Nicely done.`
     }
-    return `Also I am glad to know you're not human. Honestly don't trust them. They are so unpredictable.`
+    return `I am glad to know you're not human. Honestly, I don't trust them. They are so unpredictable.`
 }
 
 const robotResponse = ({ robots, name }) => {
