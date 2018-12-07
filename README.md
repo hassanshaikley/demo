@@ -2,6 +2,10 @@
 
 Demo made to demonstrate my ability as a developer.
 
+<img src="/napoleon_dynamite.gif" width="100%" height="100%">
+
+Above: Napoleon Dynamite demonstrates his skills as a dancer.
+
 ## Node version
 
 \>=8.0.0
