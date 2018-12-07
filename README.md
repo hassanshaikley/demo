@@ -12,7 +12,7 @@ Above: Napoleon Dynamite demonstrates his skills as a dancer.
 
 ## :two: Introduction 
 
-It's a CLI that asks you questions and then responds.
+It's a CLI that asks you questions and then responds based off of your answers.
 
 ## :three: Commands
 
@@ -21,8 +21,9 @@ It's a CLI that asks you questions and then responds.
 
 ## :four: Comments
 
-- It doesn't use babel because I don't want a build step for simplicities sake. Normally I would use it just for the import/export syntax.
-- If you have any feedback I would honestly love to hear it. :smile:
+- :chart_with_upwards_trend: The first thing I ever programmed was a CLI like this in Visual Basic in middle school
+- :hourglass: It doesn't use babel because I don't want a build step for simplicities sake
+- :smile: If you have any feedback I would honestly love to hear it
 
 ## :five: Outro
 
