@@ -1,5 +1,5 @@
 const { UnrecognizedReplyError } = require('./errors')
-
+const { FEELING } = require('./constants')
 const nameResponse = ({ name }) => {
     return `Hello ${name}`
 }
@@ -9,19 +9,19 @@ const feelingResponse = ({ feeling, name }) => {
 
     let replySecondSection;
     switch (feeling) {
-        case 'Good':
+        case FEELING.GOOD:
             replySecondSection = `Thank you ${name.toUpperCase()} for feeling good!`
             break;
-        case 'Bad':
+        case FEELING.BAD:
             replySecondSection = `Honestly, as the cow that lives in your computer. I wish for better for you, ${name.toUpperCase()}!`
             break;
-        case 'Horrific':
+        case FEELING.HORRIFIC:
             replySecondSection = `Doesn't feeling ${feeling} make you feel GREAT! That's why I love horror movies, honestly. You know. All the creatures living in your CPU love it when you play movies on us.`
             break;
-        case 'Ecstatic':
+        case FEELING.ECSTATIC:
             replySecondSection = `Well, ${name}, when you find out what is living inside of your computer that might just change.`
             break;
-        case 'Unsure':
+        case FEELING.UNSURE:
             replySecondSection = `Are you sure you feel unsure? I don't get it. I don't think any AI will ever get it.`
             break;
         default:
