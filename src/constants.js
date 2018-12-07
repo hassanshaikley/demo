@@ -11,5 +11,6 @@ module.exports = {
         UNSURE: 'Unsure',
         HORRIFIC: 'Horrific',
         ECSTATIC: 'Ecstatic'
-    }
+    },
+    FPS: 30
 }
