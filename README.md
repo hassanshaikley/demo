@@ -1,6 +1,6 @@
-# :computer: Demo
+# :computer: Your Opinion of Robots
 
-Demo made to showcase my ability as a developer.
+Demo game made to showcase my ability as a developer.
 
 <img src="/napoleon_dynamite.gif" width="100%" height="100%">
 
