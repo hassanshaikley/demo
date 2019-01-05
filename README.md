@@ -1,6 +1,6 @@
 # :computer: Your Opinion of Robots
 
-Little CLI game that asks you questions and hten responds to you.
+CLI thing that asks you questions and then responds to you.
 
 <img src="/napoleon_dynamite.gif" width="100%" height="100%">
 
